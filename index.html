@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Акимат</title>
+
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+            <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+            <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+            <!--[if lt IE 9]>
+              <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+              <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+            <![endif]-->
+        <style>        
+            .navbar {
+                margin-bottom: 0;
+                border-radius: 0;
+                box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+            }
+            footer {
+                background-color: #f2f2f2;
+                padding: 25px;
+            }
+            .carousel-image{
+                height: 550px;
+                overflow: hidden;
+            }
+            .carousel-inner img {
+                width: 100%; /* Set width to 100% */
+                margin: auto;
+                min-height:200px;
+            }
+            @media (max-width: 600px) {
+                .carousel-caption {
+                    display: none; 
+                }
+            }
+        </style>
+    </head>
+    
+    <body>
+        <nav class="navbar navbar-default">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+              </button>
+              <a class="navbar-brand" href="#">Акимат</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Главная</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="news.html">Новости</a></li>
+                <li><a href="about.html">О нас</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-earphone"></span> +7 (707) 345 6699 </a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <div class="carousel-image"><img src="assets/img/1.jpg" alt="Image"></div>
+                <div class="carousel-caption">
+                  <h3>Команда по борьбе</h3>
+                  <p>Собрана официальная сборная по борьбе Алматинской обл.</p>
+                </div>      
+              </div>
+
+              <div class="item">
+                <div class="carousel-image"><img src="assets/img/2.jpg" alt="Image"></div>
+                <div class="carousel-caption">
+                  <h3>Генадии Головкин одержал очередную победу</h3>
+                </div>      
+              </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <div class="container">    
+          <h3>Последие новости</h3><br>
+          <div class="row">
+              <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                  <img src="assets/img/3.jpg" alt="...">
+                  <div class="caption">
+                    <h3>Провелись ежемесячные отборные игры по баскетболу</h3>
+                    <p>Вчера состоялся последная игра этого сезона по школьному баскетболу</p>
+                    <p><a href="#" class="btn btn-primary" role="button">Подробнее</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                  <img src="assets/img/4.jpg" alt="...">
+                  <div class="caption">
+                    <h3>Школьные футбольные игры</h3>
+                    <p>Вчера состоялся последная игра этого сезона по школьному баскетболу</p>
+                    <p><a href="#" class="btn btn-primary" role="button">Подробнее</a></p>
+                  </div>
+                </div>
+              </div>
+            <div class="col-sm-4">
+              <div class="well">
+               <p>Новая новость</p>
+              </div>
+              <div class="well">
+               <p>Lorem ipsum тут пока постоит, не нашел новости</p>
+              </div>
+            </div>
+          </div>
+        </div><br>
+
+        <footer class="container-fluid text">
+            <div class="container">
+                <div class="col-md-5">
+                    <iframe src="https://api-maps.yandex.ua/frame/v1/-/C6qamW0b" width="100%" height="200" frameborder="0"></iframe>
+                    <p>©2017. Официальный сайт департамента спорта г. Алматы. Все права защищены</p>
+                </div>
+                <div class="col-md-4">
+                    <p>
+                        <b>Свяжитесь с нами:</b> 
+                        <br>г. Алматы +7 (727) 241-33-43
+                        <br>г. Астана +7 (717) 241-33-43
+                        <br>г. Талдыкорган +7 (716) 141-33-43
+                    </p>
+                    <p>
+                        <b>Адресс</b> 
+                        <br>г. Алматы, ул. Пушкина 8/1
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <p>
+                        <b>Главная</b><br>
+                        <a href="#">Галерея</a><br>
+                        <a href="#">Новости</a><br>
+                        <a href="#">О нас</a><br>
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    </body>
+</html>
