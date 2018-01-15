@@ -101,7 +101,7 @@ footer {
     position: relative;
 }
 .navsidebar li.deeper.parent {
-    background-image: url(//tuganel.kz/templates/smartsite-theme/img/arow.png);
+    background-image: url(../img/arrow.png);
     background-repeat: no-repeat;
     background-position: top 22px right 10px;
 }
@@ -180,7 +180,7 @@ ul.nav-child li {
     width: 5px;
     left: -10px;
     top: -20px;
-    bottom: ;
+    bottom: 0;
     height: 0;
     margin-top: 0;
     margin-bottom: auto;
