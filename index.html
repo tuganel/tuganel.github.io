@@ -32,7 +32,7 @@
                 <span class="icon-bar"></span>                        
               </button>
               <a class="navbar-brand" href="#">
-                  <img alt="Brand" src="assets/img/logo-zko.png" style="display: inline; height: 150%; margin-top: -5px; margin-right: 5px;">
+                  <img alt="Brand" src="assets/img/logo-zko.png" style="display: inline; height: 30px; margin-top: -5px; margin-right: 5px;">
                   Туған<span>Ел</span>
               </a>
             </div>
@@ -83,12 +83,12 @@
               <span class="sr-only">Next</span>
             </a>
         </div>
-        <div class="container" style="max-width: 1440px">
+        <div class="container-fluid" style="max-width: 1440px">
             <br>
             <br>
             <div class="row">
                 <div class="col-md-2">
-                    <div>
+                    <div class="">
                         <ul class="navsidebar box menu">
                             <li>
                                 <a href="/kz/zhanaly-tar.html">Жаналықтар </a>
@@ -140,7 +140,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div>
+                    <div class="">
                         <ul class="navsidebar box menu">
                             <li>
                                 <a href="/kz/zhanaly-tar.html">Жаналықтар </a>
@@ -186,12 +186,15 @@
                 </div>
                 <div class="col-md-7">
                     <div class="news-block clearfix">
-                        <div class="row box" style="padding: 15px;">
+                        <div class="box clearfix" style="padding: 15px;">
                             <h3 style="margin: -5px 0 15px 5px;">Жаңалыктар</h3>
                             <div class="col-md-7 news-main" id="news-main">
-                                <img src="http://tuganel.kz/images-new/novosti/81.jpg" alt="ҚАЗТАЛОВТЫҚТАР ЖАҢА ЖЫЛДЫ ҚАРСЫ АЛДЫ" width="100%">
+                                <div class="news-main-image">
+                                    <img src="http://tuganel.kz/images-new/novosti/81.jpg" alt="ҚАЗТАЛОВТЫҚТАР ЖАҢА ЖЫЛДЫ ҚАРСЫ АЛДЫ" width="100%">
+                                </div>
+                                <div class="news-timer"></div>
                                 <div class="news-info">
-                                    <h4 class="heading">Қазталовтықтар жана жылды қарсы алды</h4>
+                                    <h4 class="heading" title="Қазталовтықтар жана жылды қарсы алды">Қазталовтықтар жана жылды қарсы алды</h4>
                                     <p class="paragraph">31 желтоқсан. Қазталов ауылы. Сағат 21:00. Орталық алаңда халық көп жиналды. Жианалған көпшілік 2017 тауық жылын шығарып салып, 2018 ит жылын қарсылауда.</p>
                                     <div class="clearfix">
                                         <span class="small gray">31 желтоқсан 2017</span>
@@ -204,56 +207,65 @@
                                 <div class="news-media media active">
                                     <div class="media-left">
                                         <a href="#">
-                                            <img width="64" class="media-object" src="http://tuganel.kz/images-new/novosti/81.jpg" alt="Қазталовтықтар жана жылды қарсы алды">
+                                            <div class="news-media-image">
+                                                <img class="media-object" src="http://tuganel.kz/images-new/0123.jpg" alt="Бүгін қазақстандықтар алғашқы рет мемлекеттік қызметке проактивті тәсілмен қол жеткізді">
+                                            </div>
                                         </a>
                                     </div>
                                     <div class="media-body">
-                                        <h5 class="media-heading">Қазталовтықтар жана жылды қарсы алды</h5>
-                                        <p class="small"> 31 желтоқсан. Қазталов ауылы. Сағат 21:00. Орталық алаңда халық көп жиналды. Жианалған көпшілік 2017 тауық жылын шығарып салып, 2018 ит жылын қарсылауда. </p>
+                                        <h5 class="media-heading" title="Бүгін қазақстандықтар алғашқы рет мемлекеттік қызметке проактивті тәсілмен қол жеткізді">Бүгін қазақстандықтар алғашқы рет мемлекеттік қызметке проактивті тәсілмен қол жеткізді</h5>
+                                        <p class="small">Бүгін «Азаматтарға арналған үкімет» мемлекеттік корпорациясы «Ұлттық ақпараттық технологиялар» АҚ бірге бала туған ата-аналарға көрсетілетін қызметтердің проактивті әдісі бойынша пилоттық жобаны іске қосты. </p>
                                     </div>
                                 </div>
                                 <div class="news-media media">
                                     <div class="media-left">
                                         <a href="#">
-                                            <img width="64" class="media-object" src="http://tuganel.kz/images-new/2/01.jpg" alt="Бостандыққа ауыз су жеткізілді">
+                                            <div class="news-media-image">
+                                                <img class="media-object" src="http://tuganel.kz/images-new/2/01.jpg" alt="«Спортшалар балы - 2017»">
+                                            </div>
                                         </a>
                                     </div>
                                     <div class="media-body">
-                                        <h5 class="media-heading">«Спортшалар балы - 2017»</h5>
-                                        <p class="small"> Биылғы жыл ауданымыз үшін табысты жыл болды. Көптеген республикалық, xалықаралық додаларда жерлес спортшыларымыз жеңіс тұғырынан көрініп, елдің қуанышына айналуда. Спорт түрлері футбол, қазақ күресі, жеңіл және ауыр атлетика, сонымен қатар күні кеше оздырылған облыс орталығындағы волейболдан облыс әкімі кубогының жеңісі аудан еншісінде. </p>
+                                        <h5 class="media-heading" title="«Спортшалар балы - 2017»">«Спортшалар балы - 2017»</h5>
+                                        <p class="small">Биылғы жыл ауданымыз үшін табысты жыл болды. Көптеген республикалық, xалықаралық додаларда жерлес спортшыларымыз жеңіс тұғырынан көрініп, елдің қуанышына айналуда. Спорт түрлері футбол, қазақ күресі, жеңіл және ауыр атлетика, сонымен қатар күні кеше оздырылған облыс орталығындағы волейболдан облыс әкімі кубогының жеңісі аудан еншісінде. </p>
                                     </div>
                                 </div>
                                 <div class="news-media media">
                                     <div class="media-left">
                                         <a href="#">
-                                            <img width="64" class="media-object" src="http://tuganel.kz/images-new/novosti/1.jpg" alt="Бостандыққа ауыз су жеткізілді">
+                                            <div class="news-media-image">
+                                                <img class="media-object" src="http://tuganel.kz/images-new/novosti/1.jpg" alt="Бостандыққа ауыз су жеткізілді">
+                                            </div>
                                         </a>
                                     </div>
                                     <div class="media-body">
-                                        <h5 class="media-heading">Бостандыққа ауыз су жеткізілді</h5>
+                                        <h5 class="media-heading" title="Бостандыққа ауыз су жеткізілді">Бостандыққа ауыз су жеткізілді</h5>
                                         <p class="small"> 30 желтоқсан күні Бостандық, Қаракөл ауылдарында «Ақбұлақ» бағдарламасы бойынша таза ауыз су жүйелері іске қосылды. </p>
                                     </div>
                                 </div>
                                 <div class="news-media media">
                                     <div class="media-left">
                                         <a href="#">
-                                            <img width="64" class="media-object" src="http://tuganel.kz/images-new/2/01.jpg" alt="Бостандыққа ауыз су жеткізілді">
+                                            <div class="news-media-image">
+                                                <img class="media-object" src="http://tuganel.kz/images-new/1/01.jpg" alt="Арғымағым шығып желдің өтіне...">
+                                            </div>
                                         </a>
                                     </div>
                                     <div class="media-body">
-                                        <h5 class="media-heading">«Спортшалар балы - 2017»</h5>
-                                        <p class="small"> Биылғы жыл ауданымыз үшін табысты жыл болды. Көптеген республикалық, xалықаралық додаларда жерлес спортшыларымыз жеңіс тұғырынан көрініп, елдің қуанышына айналуда. Спорт түрлері футбол, қазақ күресі, жеңіл және ауыр атлетика, сонымен қатар күні кеше оздырылған облыс орталығындағы волейболдан облыс әкімі кубогының жеңісі аудан еншісінде. </p>
+                                        <h5 class="media-heading" title="Арғымағым шығып желдің өтіне...">Арғымағым шығып желдің өтіне...</h5>
+                                        <p class="small"> Жылқы қазақ даласының екінші есімі еді ғой. Осынша даланы меңгеру үшін, осынша шалғайлықты қаусыру үшін тек аттың ғана жалы мен белі, тұяғындағы желі керек болады. «Ер қанаты - ат», «Ат жалын тартып мінген», «Ат тұяғын тай басар», «Ат жетпейтін жер жоқ» -деген секілді даланың өзіндей шетсіз, шексіз қанатты сөздері ғасырлар бойы халық жадында сақталып келеді. Қысқасы, қазақтың екі сөзінің бірі - ат туралы болатын. </p>
                                     </div>
                                 </div>
-                                <div class="clearfix small">
-                                    <br>
-                                    <a href="#" style="float: right; margin-right: 20px;color: #778899b8;"><i class="glyphicon glyphicon-eye-open"></i> барлығын көру</a>
-                                </div>
+                            </div>
+                            <div class="clearfix small">
+                                <br>
+                                <a href="#" style="float: right; margin-right: 20px;color: #778899b8;"><i class="glyphicon glyphicon-eye-open"></i> барлығын көру</a>
                             </div>
                         </div>
                     </div>
-                    <div id="gallery" class="box row">
+                    <div id="gallery" class="box clearfix">
                         <h3 class="col-xs-12">Галерея</h3>
+                        <div class="clearfix"></div>
                         <div id="slider" class="clearfix">
                             <div class="col-sm-12" id="carousel-bounding-box">
                                 <div class="carousel slide" id="galleryCarousel">
@@ -261,31 +273,37 @@
                                     <div class="carousel-inner">
                                         <div class="active item" data-slide-number="0">
                                             <div class="carousel-image">
+                                                <img class="bg" src="http://tuganel.kz/kz/gallery/image.raw?view=image&type=img&id=86">
                                                 <img src="http://tuganel.kz/kz/gallery/image.raw?view=image&type=img&id=86">
                                             </div>
                                         </div>
                                         <div class="item" data-slide-number="1">
                                             <div class="carousel-image">
+                                                <img class="bg" src="http://tuganel.kz/kz/gallery/image.raw?view=image&type=img&id=100">
                                                 <img src="http://tuganel.kz/kz/gallery/image.raw?view=image&type=img&id=100">
                                             </div>
                                         </div>
                                         <div class="item" data-slide-number="2">
                                             <div class="carousel-image">
+                                                <img class="bg" src="http://tuganel.kz/kz/gallery/image.raw?view=image&type=img&id=124">
                                                 <img src="http://tuganel.kz/kz/gallery/image.raw?view=image&type=img&id=124">
                                             </div>
                                         </div>
                                         <div class="item" data-slide-number="3">
                                             <div class="carousel-image">
+                                                <img class="bg" src="http://tuganel.kz/kz/gallery/image.raw?view=image&type=img&id=147">
                                                 <img src="http://tuganel.kz/kz/gallery/image.raw?view=image&type=img&id=147">
                                             </div>
                                         </div>
                                         <div class="item" data-slide-number="4">
                                             <div class="carousel-image">
+                                                <img class="bg" src="http://tuganel.kz/kz/gallery/image.raw?view=image&type=img&id=130">
                                                 <img src="http://tuganel.kz/kz/gallery/image.raw?view=image&type=img&id=130">
                                             </div>
                                         </div>
                                         <div class="item" data-slide-number="5">
                                             <div class="carousel-image">
+                                                <img class="bg" src="http://tuganel.kz/kz/gallery/image.raw?view=image&type=img&id=108">
                                                 <img src="http://tuganel.kz/kz/gallery/image.raw?view=image&type=img&id=108">
                                             </div>
                                         </div>
@@ -304,27 +322,27 @@
                         <div class="clearfix">
                             <div class="col-sm-12">
                                 <ul class="hide-bullets">
-                                    <li class="col-sm-2">
+                                    <li class="col-sm-2 col-xs-6">
                                         <a id="carousel-selector-0"><img src="http://tuganel.kz/images/joomgallery/thumbnails/_2/fot_20170929_1446424610.png"></a>
                                     </li>
 
-                                    <li class="col-sm-2">
+                                    <li class="col-sm-2 col-xs-6">
                                         <a id="carousel-selector-1"><img src="http://tuganel.kz/images/joomgallery/thumbnails/_2/fot_20170929_1984641327.jpg"></a>
                                     </li>
 
-                                    <li class="col-sm-2">
+                                    <li class="col-sm-2 col-xs-6">
                                         <a id="carousel-selector-2"><img src="http://tuganel.kz/images/joomgallery/thumbnails/_2/1_20171127_1381634576.jpg"></a>
                                     </li>
 
-                                    <li class="col-sm-2">
+                                    <li class="col-sm-2 col-xs-6">
                                         <a id="carousel-selector-3"><img src="http://tuganel.kz/images/joomgallery/thumbnails/_2/1_20171127_1558329852.jpg"></a>
                                     </li>
 
-                                    <li class="col-sm-2">
+                                    <li class="col-sm-2 col-xs-6">
                                         <a id="carousel-selector-4"><img src="http://tuganel.kz/images/joomgallery/thumbnails/_2/1_20171127_1776988015.jpg"></a>
                                     </li>
 
-                                    <li class="col-sm-2">
+                                    <li class="col-sm-2 col-xs-6">
                                         <a id="carousel-selector-5"><img src="http://tuganel.kz/images/joomgallery/thumbnails/_2/1_20171127_1242688376.jpg"></a>
                                     </li>
                                 </ul>
