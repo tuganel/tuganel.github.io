@@ -166,7 +166,7 @@ footer {
 }
 
 .carousel-image{
-    max-height: 380px;
+    max-height: 500px;
     overflow: hidden;
 }
 .carousel-inner img {
@@ -465,7 +465,7 @@ ul.nav-child li {
 .fixed-table {
     position: relative;
 }
-.fixed-table tbody{
+.tulekter .fixed-table tbody{
     display:block;
     max-height: 363px;
     overflow:auto;
@@ -532,6 +532,15 @@ ul.nav-child li {
 
 .name-list .row {
     margin-bottom: 3rem;
+}
+
+table.table-mecenaty td:nth-child(4), th:nth-child(4)  {
+    width: 300px;
+}
+
+#gallery .hide-bullets a {
+    height: 70px;
+    overflow: hidden;
 }
 
 @media screen and (min-width: 768px) {

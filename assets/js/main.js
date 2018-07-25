@@ -21,6 +21,15 @@ function cloneToAppend(list, collection) {
     });
 }
 
+
+jQuery(document).ready(function($) {
+    $(function(){
+    $('#mainCarousel').carousel({
+      interval: 4000
+    });
+});
+});
+
 /* Gallery slider animation */
 jQuery(document).ready(function($) {
 
@@ -84,7 +93,8 @@ jQuery(document).ready(function($) {
             image: elem.find('img').attr('src'),
             heading: elem.find('.media-heading, .heading').html(),
             paragraph: elem.find('p').html(),
-            elem: elem
+            elem: elem,
+            href: elem.find('a').attr('href')
         }
     }
 
@@ -93,10 +103,11 @@ jQuery(document).ready(function($) {
         newsMain.find('.heading').html(data.heading);
         newsMain.find('.paragraph').html(data.paragraph);
         newsMain.trigger('news-changed');
+        newsMain.find('a').attr('href', data.href);
     }
 
     function renderNewsList(data) {
-        var renderHTML = '<div class="news-media media"><a href="#" onclick="return false"><div class="media-left"><div class="news-media-image"><img class="media-object" src="' + data.image + '" alt="' + data.heading + '"></div></div><div class="media-body"><h5 class="media-heading" title="' + data.heading + '">' + data.heading + '</h5><p class="small">' + data.paragraph + '</p></div></a></div>';
+        var renderHTML = '<div class="news-media media"><a href="' + data.href + '" onclick="return false"><div class="media-left"><div class="news-media-image"><img class="media-object" src="' + data.image + '" alt="' + data.heading + '"></div></div><div class="media-body"><h5 class="media-heading" title="' + data.heading + '">' + data.heading + '</h5><p class="small">' + data.paragraph + '</p></div></a></div>';
         newsList.append(renderHTML);
     }
 
@@ -118,6 +129,7 @@ jQuery(document).ready(function($) {
     }
 
     function startTimeout() {
+        if (!newsTimerProcess) return;
         newsTimerProcess.classList.add('news-timer-start');
         timeout = setTimeout(function(){
             var news = newsList.find('.news-media.active+.news-media')[0];
@@ -128,9 +140,9 @@ jQuery(document).ready(function($) {
         }, time);
     }
 
-    $(document).on('click','#main-news-block .news-media:not(.removing)',function() {
-        onSwitchNews($(this));
-    });
+    // $(document).on('click','#main-news-block .news-media:not(.removing)',function() {
+    //     onSwitchNews($(this));
+    // });
 
     function onSwitchNews(news) {
         if (Globals.mainNewsBlock.isRemovingNews) {
